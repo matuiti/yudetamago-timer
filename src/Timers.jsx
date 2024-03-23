@@ -57,36 +57,131 @@ const Timers = () => {
   }
 
   return (
-    <ul style={{display:"flex",flexDirection:"column",gap:"37px"}}>
-      <li style={{display:"flex",justifyContent:"center",gap:"20px"}}>
-        <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
-          <img src="public\images\katayude@2x.png" style={{width:"65px",height:"79px"}}/>
+    <ul style={{ display: "flex", flexDirection: "column",rowGap:"36px",padding:"63px 8px"}}>
+      <li style={{ display: "flex", justifyContent:"space-between"}}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            width:"81px"
+          }}
+        >
+          <img
+            src="public\images\katayude@2x.png"
+            style={{ width: "65px", height: "79px" }}
+          />
         </div>
-        <div style={{color:"#492C15", fontSize:"56px",display:"flex",justifyContent:"center",alignItems:"center"}}>{formatTime(timer)}</div>
-        <div style={{display:"flex"}}>
-          <button style={{margin:"auto",width:"75px",height:"75px",backgroundColor:"#FF774E",borderRadius:"50%",fontSize:"14px",color:"#FFFFFF"}} onClick={toggleButton} disabled={timer <= 0 && !isRunning}>
+        <div
+          style={{
+            color: "#492C15",
+            fontSize: "56px",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          {formatTime(timer)}
+        </div>
+        <div style={{ display: "flex" }}>
+          <button
+            style={{
+              margin: "auto",
+              width: "75px",
+              height: "75px",
+              backgroundColor: "#FF774E",
+              borderRadius: "50%",
+              fontSize: "14px",
+              color: "#FFFFFF",
+            }}
+            onClick={toggleButton}
+            disabled={timer <= 0 && !isRunning}
+          >
             {isStartButtonVisible ? "スタート" : "リセット"}
           </button>
         </div>
       </li>
-      <li>
-        <div>
-          <img src="public\images\hannjuku@2x.png"/>
+      <li style={{ display: "flex", justifyContent:"space-between"}}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            width:"81px"
+          }}
+        >
+          <img
+            src="public\images\hannjuku@2x.png"
+            style={{ width: "65px", height: "79px" }}
+          />
         </div>
-        <div>{formatTime(timer)}</div>
-        <div>
-          <button onClick={toggleButton} disabled={timer <= 0 && !isRunning}>
+        <div
+          style={{
+            color: "#492C15",
+            fontSize: "56px",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          {formatTime(timer)}
+        </div>
+        <div style={{ display: "flex" }}>
+          <button
+            style={{
+              margin: "auto",
+              width: "75px",
+              height: "75px",
+              backgroundColor: "#FF774E",
+              borderRadius: "50%",
+              fontSize: "14px",
+              color: "#FFFFFF",
+            }}
+            onClick={toggleButton}
+            disabled={timer <= 0 && !isRunning}
+          >
             {isStartButtonVisible ? "スタート" : "リセット"}
           </button>
         </div>
       </li>
-      <li>
-        <div>
-          <img src="public\images\onnsenn@2x.png"/>
+
+      <li style={{ display: "flex", justifyContent:"space-between"}}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <img
+            src="public\images\onnsenn@2x.png" style={{width:"81px"}}
+          />
         </div>
-        <div>{formatTime(timer)}</div>
-        <div>
-          <button onClick={toggleButton} disabled={timer <= 0 && !isRunning}>
+        <div
+          style={{
+            color: "#492C15",
+            fontSize: "56px",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          {formatTime(timer)}
+        </div>
+        <div style={{ display: "flex" }}>
+          <button
+            style={{
+              margin: "auto",
+              width: "75px",
+              height: "75px",
+              backgroundColor: "#FF774E",
+              borderRadius: "50%",
+              fontSize: "14px",
+              color: "#FFFFFF",
+            }}
+            onClick={toggleButton}
+            disabled={timer <= 0 && !isRunning}
+          >
             {isStartButtonVisible ? "スタート" : "リセット"}
           </button>
         </div>

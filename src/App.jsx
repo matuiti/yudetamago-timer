@@ -13,9 +13,7 @@ function App() {
     <div
       style={{
         maxWidth: "375px",
-        // fontFamily: "Mochiy Pop One sansSerif",
-        // fontWeight: "400",
-        // fontStyle: "normal",
+        letterSpacing:"0px",
       }}
       className={"min-h-screen w-full m-auto border"}
     >
