@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "git-push": "git add . && git commit -m $1 && git push origin main",
+    "git-push": "git add . && git commit -m -- && git push origin main",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
