@@ -6,6 +6,12 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      body: [
+        "Mochiy Pop One",
+        "sans-serif",
+      ],
+    }, 
   },
   plugins: [],
-}
+};
