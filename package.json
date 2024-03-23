@@ -6,8 +6,6 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "git-commit": "git add . && git commit -m",
-    "commit": "npm run git-commit --",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
