@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { IsTipsContext } from "./App"
+import { IsTipsContext } from "../App"
 
 const TipsButton = () => {
   const [isTips, setIsTips] = useContext(IsTipsContext)
