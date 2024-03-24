@@ -3,9 +3,9 @@ import { useState, useEffect } from "react"
 const Timers = () => {
   // 初期値として各種ゆで方の時間を設定します（秒数で表記）
   const initialTimers = {
-    hardBoiled: 600, // 硬ゆで（10分）
-    softBoiled: 420, // 半熟（7分）
-    poached: 300, // 温泉卵（5分）
+    hardBoiled: 720, // 硬ゆで（12分）
+    softBoiled: 480, // 半熟  （8分）
+    poached:    720, // 温泉卵（12分）
   }
 
   const [timer, setTimer] = useState(initialTimers.hardBoiled)
