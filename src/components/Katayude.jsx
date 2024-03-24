@@ -8,7 +8,6 @@ const Katayude = ({ initialTime, formatTime }) => {
 
   // タイマーが動作中の場合、1秒ごとにカウントダウン関数を呼び出す
   useEffect(() => {
-    // カウントダウンロジックを実装する関数
     const countdown = () => {
       if (timer > 0) {
         setTimer(timer - 1)
