@@ -51,7 +51,7 @@ const Hannjuku = ({ initialTime, formatTime }) => {
         }}
       >
         <img
-          src="public\images\hannjuku@2x.png"
+          src="\images\hannjuku@2x.png"
           style={{ width: "65px", height: "79px" }}
         />
       </div>

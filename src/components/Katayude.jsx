@@ -51,7 +51,7 @@ const Katayude = ({ initialTime, formatTime }) => {
         }}
       >
         <img
-          src="public\images\katayude@2x.png"
+          src="\images\katayude@2x.png"
           style={{ width: "65px", height: "79px" }}
         />
       </div>
