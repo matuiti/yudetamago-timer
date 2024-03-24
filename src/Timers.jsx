@@ -1,4 +1,5 @@
 // import { useState, useEffect } from "react"
+import Hannjuku from "./components/Hannjuku"
 import Katayude from "./components/Katayude"
 
 const Timers = () => {
@@ -60,6 +61,7 @@ const Timers = () => {
   return (
     <ul style={{ display: "flex", flexDirection: "column",rowGap:"36px",padding:"63px 8px"}}>
       <Katayude initialTime={initialTimers.katayude} formatTime={formatTime} />
+      <Hannjuku initialTime={initialTimers.hannjuku} formatTime={formatTime} />
       {/* <li style={{ display: "flex", justifyContent:"space-between"}}>
         <div
           style={{
