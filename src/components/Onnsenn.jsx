@@ -52,7 +52,7 @@ const Onnsenn = ({ initialTime, formatTime }) => {
           }}
         >
           <img
-            src="\images\onnsenn@2x.png"
+            src="\images\yudetamago-timer\onnsenn@2x.png"
             style={{ width: "81px", height: "55px" }}
           />
         </div>
