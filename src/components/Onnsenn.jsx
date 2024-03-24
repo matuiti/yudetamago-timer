@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 
 // eslint-disable-next-line react/prop-types
-const Hannjuku = ({ initialTime, formatTime }) => {
+const Onnsenn = ({ initialTime, formatTime }) => {
   const [timer, setTimer] = useState(initialTime)
   const [isRunning, setIsRunning] = useState(false)
   const [isStartButtonVisible, setIsStartButtonVisible] = useState(true)
@@ -42,50 +42,53 @@ const Hannjuku = ({ initialTime, formatTime }) => {
   }
 
   return (
-    <li style={{ display: "flex", justifyContent: "space-between" ,padding:"0 8px"}}>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          width: "81px",
-        }}
-      >
-        <img
-          src="public\images\hannjuku@2x.png"
-          style={{ width: "65px", height: "79px" }}
-        />
-      </div>
-      <div
-        style={{
-          color: "#492C15",
-          fontSize: "56px",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        {formatTime(timer)}
-      </div>
-      <div style={{ display: "flex" }}>
-        <button
+    <li style={{backgroundColor:"#FFF3CE",padding:"20px 8px 16px"}}>
+      <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <div
           style={{
-            margin: "auto",
-            width: "75px",
-            height: "75px",
-            backgroundColor: isRunning ? "#4ED0FF" : "#FF774E",
-            borderRadius: "50%",
-            fontSize: "14px",
-            color: "#FFFFFF",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            marginTop:"12px"
           }}
-          onClick={toggleButton}
-          disabled={timer <= 0 && !isRunning}
         >
-          {isStartButtonVisible ? "スタート" : "リセット"}
-        </button>
+          <img
+            src="public\images\onnsenn@2x.png"
+            style={{ width: "81px", height: "55px" }}
+          />
+        </div>
+        <div
+          style={{
+            color: "#492C15",
+            fontSize: "56px",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          {formatTime(timer)}
+        </div>
+        <div style={{ display: "flex" }}>
+          <button
+            style={{
+              margin: "auto",
+              width: "75px",
+              height: "75px",
+              backgroundColor: isRunning ? "#4ED0FF" : "#FF774E",
+              borderRadius: "50%",
+              fontSize: "14px",
+              color: "#FFFFFF",
+            }}
+            onClick={toggleButton}
+            disabled={timer <= 0 && !isRunning}
+          >
+            {isStartButtonVisible ? "スタート" : "リセット"}
+          </button>
+        </div>
       </div>
+      <p style={{textAlign:"center",paddingTop:"22px"}}>温泉卵は、<span style={{color:"#FF774E"}}>お湯にいれ火を止めてから</span><br />スタートを押してね！</p>
     </li>
   )
 }
 
-export default Hannjuku
+export default Onnsenn

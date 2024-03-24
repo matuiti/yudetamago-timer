@@ -1,6 +1,7 @@
 // import { useState, useEffect } from "react"
 import Hannjuku from "./components/Hannjuku"
 import Katayude from "./components/Katayude"
+import Onnsenn from "./components/Onnsenn"
 
 const Timers = () => {
   // 初期値として各種ゆで方の時間を設定します（秒数で表記）
@@ -59,54 +60,12 @@ const Timers = () => {
   // }
 
   return (
-    <ul style={{ display: "flex", flexDirection: "column",rowGap:"36px",padding:"63px 8px"}}>
+    <ul style={{ display: "flex", flexDirection: "column",rowGap:"36px",padding:"100px 0"}}>
       <Katayude initialTime={initialTimers.katayude} formatTime={formatTime} />
       <Hannjuku initialTime={initialTimers.hannjuku} formatTime={formatTime} />
+      <Onnsenn  initialTime={initialTimers.onnsenn } formatTime={formatTime} />
+      
       {/* <li style={{ display: "flex", justifyContent:"space-between"}}>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            width:"81px"
-          }}
-        >
-          <img
-            src="public\images\hannjuku@2x.png"
-            style={{ width: "65px", height: "79px" }}
-          />
-        </div>
-        <div
-          style={{
-            color: "#492C15",
-            fontSize: "56px",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          {formatTime(timer)}
-        </div>
-        <div style={{ display: "flex" }}>
-          <button
-            style={{
-              margin: "auto",
-              width: "75px",
-              height: "75px",
-              backgroundColor: "#FF774E",
-              borderRadius: "50%",
-              fontSize: "14px",
-              color: "#FFFFFF",
-            }}
-            onClick={toggleButton}
-            disabled={timer <= 0 && !isRunning}
-          >
-            {isStartButtonVisible ? "スタート" : "リセット"}
-          </button>
-        </div>
-      </li>
-
-      <li style={{ display: "flex", justifyContent:"space-between"}}>
         <div
           style={{
             display: "flex",

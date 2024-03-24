@@ -42,7 +42,7 @@ const Katayude = ({ initialTime, formatTime }) => {
   }
 
   return (
-    <li style={{ display: "flex", justifyContent: "space-between" }}>
+    <li style={{ display: "flex", justifyContent: "space-between" ,padding:"0 8px"}}>
       <div
         style={{
           display: "flex",
